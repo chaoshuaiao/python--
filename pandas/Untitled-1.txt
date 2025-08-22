@@ -1,0 +1,11 @@
+function Sidebar({ messages, onClear }) {
+  return (
+    <div>
+      <h3>侧栏聊天记录</h3>
+      <ul>
+        {messages.map((msg, idx) => <li key={idx}>{msg}</li>)}
+      </ul>
+      <button onClick={onClear}>清除聊天记录</button>
+    </div>
+  );
+}
